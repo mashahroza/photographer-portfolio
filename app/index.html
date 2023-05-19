@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter Parker</title>
+
+    <script src="./libs/gsap/gsap.min.js" defer></script>
+    <script src="./libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="./libs/gsap/ScrollSmoother.min.js" defer></script>
+
+    <script src="./libs/fslightbox-basic-3.4.1/fslightbox.js" defer></script>
+    <script src="js/app.min.js" defer></script>
+
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="content">
+            <div class="modal">
+                <div class="modal__box">
+                    <h2 class="modal__title">Contact me</h2>
+                    <button class="close-modal">
+                        <span class="close-modal__btn"></span>
+                    </button>
+                    <form class="form">
+                        <input class="form__input" type="text" name="name" placeholder="Name" autocomplete="off">
+                        <input class="form__input" type="email" name="email" placeholder="E-mail" autocomplete="off">
+                        <textarea class="form__textarea" name="comments" placeholder="Your text"></textarea>
+                        <button class="form__btn" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            <header class="top">
+                <div class="container">
+                    <div class="mobile__menu">
+                        <button class="menu__btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+
+                    <ul class="top__list">
+                        <ul class="top__list-top">
+                            <hr>
+                            <li class="top__list-item">
+                                <a class="top__list-link" href="https://www.instagram.com/">blog</a>
+                            </li>
+                            <li class="top__list-item">
+                                <button class="top__list-btn">contact me</button>
+                            </li>
+                            <li class="top__list-item">
+                                <a class="top__list-link" href="./about.html">about</a>
+                            </li>
+                        </ul>
+                        <ul class="mobile__social-list">
+                            <li class="mobile__list-item">
+                                <a class="mobile__list-link pinterest-link" href="#"></a>
+                            </li>
+                            <li class="mobile__list-item">
+                                <a class="mobile__list-link instagram-link" href="#"></a>
+                            </li>
+                            <li class="mobile__list-item">
+                                <a class="mobile__list-link facebook-link" href="#"></a>
+                            </li>
+                            <li class="mobile__list-item">
+                                <a class="mobile__list-link linkedIn-link" href="#"></a>
+                            </li>
+                        </ul>
+                    </ul>
+
+
+                </div>
+            </header>
+
+            <main class="main">
+                <section class="hero-section">
+                    <img data-lag=".5" data-speed=".6" class="hero" src="./images/dest/hero.png" alt="hero image">
+                    <div class="container">
+                        <div data-speed=".75" class="main__box">
+                            <h1 class="main__title">Peter Parker, Photographer NY</h1>
+                            <button class="contact-me-btn">contact me</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="gallery-section">
+                    <div class="container">
+                        <div class="gallery">
+                            <div data-speed="1" class="gallery__left">
+
+                                <div class="gallery__item">
+                                    <a data-fslightbox="gallery" href="./images/dest/1newsize.jpg">
+                                        <img class="gallery__img" src="./images/dest/1newsize.jpg">
+                                    </a>
+                                </div>
+
+                                <div class="gallery__item">
+                                    <a data-fslightbox="gallery" href="./images/dest/2newsize.jpg">
+                                        <img class="gallery__img" src="./images/dest/2newsize.jpg">
+                                    </a>
+                                </div>
+
+                                <div class="text-block gallery__item">
+                                    <h2 class="text-block__title">Experience
+                                    </h2>
+                                    <p class="text-block__text">I had several years of experience with creative
+                                        retouching, layout and graphic design, 3 years of experience in commercial
+                                        photography, 1 year of wedding and family photography. <br> A lot of my work has
+                                        been published in well-known magazines.</p>
+                                </div>
+
+                                <div class="gallery__item">
+                                    <a data-fslightbox="gallery" href="./images/dest/6newsize.jpg">
+                                        <img class="gallery__img" src="./images/dest/6newsize.jpg">
+                                    </a>
+                                </div>
+
+                                <div class="gallery__item">
+                                    <a data-fslightbox="gallery" href="./images/dest/7newsize.jpg">
+                                        <img class="gallery__img" src="./images/dest/7newsize.jpg">
+                                    </a>
+                                </div>
+
+
+                            </div>
+
+                            <div data-speed="1.1" class="gallery__right">
+
+                                <div class="text-block gallery__item">
+                                    <h2 class="text-block__title">Hello everyone! My name is Peter
+                                    </h2>
+                                    <p class="text-block__text">I'm based in New York, California. Upon most I'm focus
+                                        on commercial and portarait photography. <br> I'm have bachelor in graphic arts
+                                        engineering. </p>
+                                </div>
+
+                                <div class="gallery__item">
+                                    <a data-fslightbox="gallery" href="./images/dest/4newsize.jpg">
+                                        <img class="gallery__img" src="./images/dest/4newsize.jpg">
+                                    </a>
+                                </div>
+
+                                <div class="gallery__item">
+                                    <a data-fslightbox="gallery" href="./images/dest/5newsize.jpg">
+                                        <img class="gallery__img" src="./images/dest/5newsize.jpg">
+                                    </a>
+                                </div>
+
+                                <div class="gallery__item">
+                                    <a data-fslightbox="gallery" href="./images/dest/3newsize.jpg">
+                                        <img class="gallery__img" src="./images/dest/3newsize.jpg">
+                                    </a>
+                                </div>
+
+                                <div class="text-block gallery__item">
+                                    <h2 class="text-block__title">"If you can see it, you can shoot it." <br>- Ted Grant
+                                    </h2>
+                                    <p class="text-block__text">Photography is my passion, I believe that everyone
+                                        should have the opportunity to feel beautiful in a photograph. See more my
+                                        latest portraits photoshoots.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <button class="load-more-btn">Load more</button>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <div class="container">
+                    <h3 class="footer__title">Peter Parker</h3>
+                    <ul class="footer__social-list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link pinterest-link" href="#"></a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link instagram-link" href="#"></a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link facebook-link" href="#"></a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link linkedIn-link" href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="footer__text">crated by Mariia Hroza 2023</p>
+            </footer>
+
+        </div>
+    </div>
+</body>
+
+</html>
