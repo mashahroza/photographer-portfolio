@@ -49,7 +49,7 @@ function buildCopy () {
         'app/css/**/*.min.css',
         'app/js/**/*.min.js',
         'app/images/dest/**/*',
-        'app/**/*.html',
+        '*.html',
     ])
     .pipe(dest('dist'))
 }
@@ -57,7 +57,7 @@ function buildCopy () {
 function startWatch() {
     watch('app/sass/*.scss', styles);
     watch(['app/**/*.js', '!app/**/*.min.js'], scripts);
-    watch('app/**/*.html').on('change', browserSync.reload);
+    watch('*.html').on('change', browserSync.reload);
     watch('app/images/src/*', images)
 }
 
