@@ -1,18 +1,18 @@
 const images = [
     {
-        src: './images/dest/more1.jpg'
+        src: './app/images/dest/more1.jpg'
     },
     {
-        src: './images/dest/more2.jpg'
+        src: './app/images/dest/more2.jpg'
     },
     {
-        src: './images/dest/more3.jpg'
+        src: './app/images/dest/more3.jpg'
     },
     {
-        src: './images/dest/more4.jpg'
+        src: './app/images/dest/more4.jpg'
     },
     {
-        src: './images/dest/more5.jpg'
+        src: './app/images/dest/more5.jpg'
     }
 ]
 const body = document.querySelector('body');
