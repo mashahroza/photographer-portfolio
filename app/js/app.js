@@ -62,7 +62,7 @@ modal.addEventListener('click', (e) => {
 const getData = async (url) => {
     const response = await fetch(url);
     if (!response.ok) {
-        throw new Error(`error adress ${url}, status ${response.status}`)
+        throw new Error(`error adress ${url}, status ${response.status}`);
     }
     return await response.json();
 };
